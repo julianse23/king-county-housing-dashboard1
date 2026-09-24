@@ -25,7 +25,17 @@ resultado_hipotesis = {
 }
 
 # ---- Inicializar la app ----
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
+import os
+
+# ---- Inicializar la app ----
+JUPYTERHUB_SERVICE_PREFIX = os.environ.get("JUPYTERHUB_SERVICE_PREFIX", "/")
+requests_pathname_prefix = JUPYTERHUB_SERVICE_PREFIX + "proxy/8050/"
+
+app = dash.Dash(
+    __name__,
+    external_stylesheets=[dbc.themes.FLATLY],
+    requests_pathname_prefix=requests_pathname_prefix
+)
 server = app.server  # necesario para despliegue (Binder/Render/Heroku)
 
 app.title = "King County Housing Dashboard"
