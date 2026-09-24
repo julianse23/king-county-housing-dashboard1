@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 
 # ---- Cargar datos ----
-   df_dash = pd.read_csv("kc_house_data_clean.csv")
+df_dash = pd.read_csv("kc_house_data_clean.csv")
 
 # ---- Resultados de los modelos (obtenidos en el análisis previo) ----
 resultados_modelos = {
