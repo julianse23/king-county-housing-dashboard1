@@ -12,7 +12,7 @@ Este proyecto presenta un análisis completo del dataset [House Sales in King Co
 
 ## Ejecutar en Binder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/julianse23/king-county-housing-dashboard/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/julianse23/king-county-housing-dashboard1/HEAD)
 
 ## Estructura del proyecto
 
